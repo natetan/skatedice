@@ -5,12 +5,11 @@
  * This class generates a random skateboard trick. 
  */
 
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class SkateDice {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) {
 		TrickManager manager = new TrickManager();
 		giveIntro();
 		getTrick(manager);
@@ -39,5 +38,6 @@ public class SkateDice {
 			}
 		}
 		console.close();
+		System.out.println("A total of " + (i - 1) + " tricks were printed out");
 	}
 }
